@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "rent-or-buy"
+version = "0.1.0"
+description = "A tool assisting the decision whether to rent or to buy"
+authors = ["Michael Rader <mrader1248@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dash = "^2.13.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+mypy = "^1.5.1"
+pre-commit = "^3.4.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.scripts]
+rent-or-buy = "rent_or_buy.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
