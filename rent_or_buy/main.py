@@ -149,10 +149,10 @@ app.layout = dbc.Container(
                             [
                                 html.I(className="bi bi-info-circle-fill me-2"),
                                 (
-                                    "Die Entwicklung des Tools erfolgte nach bestem ",
-                                    "Wissen und Gewissen. Dennoch wird keine Haftung ",
-                                    "für die Korrektheit der Ergebnisse übernommen. ",
-                                    "Dieses Tool stellt keine Anlageberatung dar.",
+                                    "Die Entwicklung des Tools erfolgte nach bestem "
+                                    "Wissen und Gewissen. Dennoch wird keine Haftung "
+                                    "für die Korrektheit der Ergebnisse übernommen. "
+                                    "Dieses Tool stellt keine Anlageberatung dar."
                                 ),
                             ],
                             color="info",
