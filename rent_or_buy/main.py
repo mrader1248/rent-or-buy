@@ -13,7 +13,7 @@ red2 = "#d23369"
 red3 = "#9c254d"
 
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
+app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY, dbc.icons.BOOTSTRAP])
 app.layout = dbc.Container(
     [
         dbc.Row(
@@ -143,6 +143,20 @@ app.layout = dbc.Container(
                                     title="Wirtschaftslage",
                                 ),
                             ]
+                        ),
+                        html.Br(),
+                        dbc.Alert(
+                            [
+                                html.I(className="bi bi-info-circle-fill me-2"),
+                                (
+                                    "Die Entwicklung des Tools erfolgte nach bestem ",
+                                    "Wissen und Gewissen. Dennoch wird keine Haftung ",
+                                    "für die Korrektheit der Ergebnisse übernommen. ",
+                                    "Dieses Tool stellt keine Anlageberatung dar.",
+                                ),
+                            ],
+                            color="info",
+                            dismissable=True,
                         ),
                     ],
                     md=4,

@@ -8,7 +8,7 @@ poetry install
 
 ## Running
 ```shell
-TODO
+poetry run gunicorn rent_or_buy:server
 ```
 
 ## Development setup
